@@ -1,0 +1,48 @@
+#### Basic steps for creating a project ####
+
+1. Decide where I want to store my project then navigate to that location in the terminal
+
+2. Enter in the rails command that generates a new app
+  - rails new AppName -T --database=postgresql
+      What does some of these things mean?
+        - I use the '-T' command when I don't want to include tests.
+        - I use the '--database=postgresql' command when I want to create a postgre database. Which is typicaly what I will do.
+
+3. After rails generates the application I navigate to the application in the terminal. 
+
+4. After I navigate to the application I create the database.
+  - rails db:create
+
+####################################################################  
+
+#### Basic steps for generating a scaffold ####
+
+1. Determine which attributes/datatypes I will use in my scaffold.
+
+2. Create the scaffold
+  - rails g scaffold Featurename attribute:datetype attribute:datatype
+
+3. After rails generates the scaffold, it's important that I check the migration file that rails created to ensure I spelled everything correctly when I entered the 'rails g scaffold' command because after I migrate the database the migration file can't be changed.
+  - I find the migration file I want to check in the following location -- db/migrate/'file will be here'
+
+4. Migrate the database
+ - rails db:migrate
+
+#####################################################################
+
+#### How to customize my generators ####
+
+### How to override the sytlesheets that the scaffold generated through the 'lib' directory?
+
+1. Create a new directory inside of the 'lib' directory and name it 'templates'.
+
+2. Create two more directories inside of the 'template' directory named 'erb' then create one more directory inside of 'erb' called 'scaffold'.
+
+3. Create a new file inside of the 'scaffold' directory named 'index.html.erb'
+
+
+
+
+
+
+
