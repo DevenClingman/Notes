@@ -1,0 +1,20 @@
+### How to build the New and Create functionaility from scratch in Rails###
+
+### Description of the 'rake routes' command.
+  - If I enter 'rails routes' the terminal will show the same thing. 
+
+1. When I enter the 'rake routes' or 'rails routes' command the terminal will show me the available routes for the entire system.
+
+2. This command will show four columns. 
+  - Prefix
+    - This column shows our route method.
+  - Verb
+    - 
+  - URI Pattern
+    - This column shows what I enter in the browser to access the view.
+    - When I see an ':id' listed, it means it expects an ID value.
+  -Controller#Action
+    - Lists the methods
+
+3. If I want to locate routes with a specific feature I use the pip '|' command with 'grep'
+  - rake routes | grep <keyword>

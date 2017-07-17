@@ -1,0 +1,20 @@
+### Notes on controllers. 
+
+- Is each method in a controller an action?
+
+In a controller I might type something like this:
+
+___________________________________________________
+
+def index
+  @portfolio_items = Portfolio.all
+end
+___________________________________________________
+
+ - When I type 'Portfolio.all' I call to the Model and the @portfolio_items allows the controller to communicate with the view (what the users sees).
+
+ - So the Model communicates with the Controller and the Controller communicates with the View.
+
+ - The controller only communicates with the view if I have a template. Which is typically an html file named somthing like this -- name_of_file.html.erb. -- The 'erb' means 'embedded ruby', this allows me to write ruby code inside of my html document. 
+
+ 
